@@ -1,2 +1,2 @@
 # Project Athena
-Athena is an AI-driven chatbot driven by Python's NLTK (natural language toolkit) library. 
+Athena is an AI-driven chatbot based on Python's NLTK (natural language toolkit) library. 
