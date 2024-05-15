@@ -8,7 +8,7 @@ Due to the increasing amount of people wanting to seek an academic degree abroad
 
 ### About the Founders
 ##### Jianan (Landy) Zhuo
-Landy is a prospective cognitive science major and ML engineer from Taiwan. Currently residing in China, he is a high school student who enjoys running in his free time. To learn more about him, visit <a href="landy-zhuo.eu.org">landy-zhuo.eu.org</a>. 
+Landy is a prospective cognitive science major and ML engineer from Taiwan. Currently residing in China, he is a high school student who enjoys running in his free time. To learn more about him, visit <a href="https://landy-zhuo.eu.org">landy-zhuo.eu.org</a>. 
 
 ##### Mingjia (Johnny) Pu
 Johnny is a HS student from China. In the future, Johnny wants to study data science in college and become a data scientist in Wall Street. In his free time, he enjoys playing League of Legends and chess. Click <a href="https://pujohnny111.github.io/">HERE</a> to learn more about him!
