@@ -1,6 +1,6 @@
 # Project Athena 
 
-<div style="text-align: right;">
+<div align="center">
   <img src="assets/images/logo.png" alt="Project Athena Logo" width="50%" height="50%">
 </div>
 
