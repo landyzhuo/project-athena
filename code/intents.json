@@ -1,0 +1,56 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hi there",
+                "How are you?",
+                "Hey!",
+                "Yo",
+                "Sup",
+                "Hey Athena",
+                "Athena!",
+                "Is anyone there?"
+            ],
+            "responses": [
+                "Hey, what's the matter?",
+                "Hi, how can I help you?"
+            ]
+        },
+        {
+            "tag": "intro",
+            "patterns": [
+                "Who are you?",
+                "What is Athena?"
+            ],
+            "responses": [
+                "Hi! I'm Athena- an AI-driven chatbot which assists people on the topic of studying abroad :-)"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Bye Bye",
+                "Quit"
+            ],
+            "responses": [
+                "Have a nice day :-)",
+                "Bye~"
+            ]
+        },
+        {
+            "tag": "vulgar-goodbye",
+            "patterns": [
+                "Fuck off",
+                "Get lost"
+            ],
+            "responses": [
+                "That's vulgar... Goodbye!"
+            ]
+        }
+    ]
+}
