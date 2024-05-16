@@ -1,7 +1,6 @@
 # Project Athena 
 
-<img src="assets/images/logo.png" alt="Project Athena Logo" width="50%" height="50%">
-![Project Athena Logo](assets/images/logo.png "Project Athena Logo")
+<img src="assets/images/logo.png" alt="Project Athena Logo" width="50%" height="50%" style="text-align: right">
 
 ### What is Project Athena?
 Athena is an AI-driven chatbot for studying abroad based on Python's NLTK (natural language toolkit) library. 
