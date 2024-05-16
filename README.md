@@ -1,5 +1,6 @@
 # Project Athena 
 
+<img src="assets/images/logo.png" alt="Project Athena Logo" width="50%" height="50%">
 ![Project Athena Logo](assets/images/logo.png "Project Athena Logo")
 
 ### What is Project Athena?
