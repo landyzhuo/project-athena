@@ -1,4 +1,6 @@
-# Project Athena
+# Project Athena 
+
+![Project Athena Logo](assets/images/logo.png "Project Athena Logo")
 
 ### What is Project Athena?
 Athena is an AI-driven chatbot for studying abroad based on Python's NLTK (natural language toolkit) library. 
