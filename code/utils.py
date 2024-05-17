@@ -2,6 +2,7 @@
 import nltk
 # imports the Porter Stemmer
 from nltk.stem.porter import PorterStemmer
+import numpy as np
 
 # pre-trained AI tokenizer
 nltk.download("punkt")
@@ -18,4 +19,9 @@ def stem(word):
 
 # eliminate punctuations from array
 def bagOfWords(tokenized_prompt, word_list):
-    pass
+    tokenized_prompt = [stem(w) for w in tokenized_prompt]
+    bag = np.zeros(len(word_list), dtype=np.float32)
+    for index, w in enumerate(word_list):
+        if w in tokenized_prompt:
+            bag[index] = 1.0
+    return bag

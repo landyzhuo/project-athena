@@ -1,5 +1,10 @@
 import json
 from utils import tokenize, stem, bagOfWords
+import numpy as np
+
+import torch
+import torch.nn as nn
+from torch.utils.data import Dataset, DataLoader
 
 with open('intents.json','r') as f:
     intents = json.load(f)
@@ -21,3 +26,29 @@ words = [stem(i) for i in words if i not in exclude_symbols]
 words = sorted(set(words))
 tags = sorted(set(tags))
 print(tags, words)
+
+x_train = []
+y_train = []
+for (sentence, tg) in xy:
+    bag = bagOfWords(sentence, words)
+    x_train.append(bag)
+    y_train.append(tags.index(tg))
+
+x_train = np.array(x_train)
+y_train = np.array(y_train)
+
+class AthenaDataset(Dataset):
+    def __init__(self):
+        self.n_samples = len(x_train)
+        self.x_data = x_train
+        self.y_data = y_train
+    
+    def __getitem__(self, index):
+        return self.x_data[index], self.y_data[index]
+    
+    def __len__(self):
+        return self.n_samples
+    
+batch_size = 8
+dataset = AthenaDataset()
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
