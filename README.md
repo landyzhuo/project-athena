@@ -1,7 +1,7 @@
 # Project Athena 
 
 <div align="center">
-  <img src="assets/images/logo.png" alt="Project Athena Logo" width="50%" height="50%">
+  <img src="assets/images/logo.png" alt="Project Athena Logo" width="40%" height="40%">
 </div>
 
 ### What is Project Athena?
