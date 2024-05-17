@@ -1,10 +1,10 @@
 import json
 from utils import tokenize, stem, bagOfWords
 import numpy as np
-
 import torch
-import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+import torch.nn as nn
+from model import NeuralNetwork
 
 with open('intents.json','r') as f:
     intents = json.load(f)
@@ -25,7 +25,6 @@ exclude_symbols = ['?','!','.',',',':',';','"',"'","-","/"]
 words = [stem(i) for i in words if i not in exclude_symbols]
 words = sorted(set(words))
 tags = sorted(set(tags))
-print(tags, words)
 
 x_train = []
 y_train = []
@@ -35,6 +34,7 @@ for (sentence, tg) in xy:
     y_train.append(tags.index(tg))
 
 x_train = np.array(x_train)
+# x_train = x_train.type(torch.LongTensor)
 y_train = np.array(y_train)
 
 class AthenaDataset(Dataset):
@@ -50,5 +50,29 @@ class AthenaDataset(Dataset):
         return self.n_samples
     
 batch_size = 8
+hidden_size = 8
+output_size = len(tags)
+input_size=len(x_train[0])
+learning_rate = 0.001
+epochs = 1000
+
 dataset = AthenaDataset()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=0)
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
+
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
+for epoch in range(epochs):
+    for (letters, labels) in  train_loader:
+        letters = letters.to(device)
+        labels = labels.to(device)
+
+        output = model(letters)
+        loss = criterion(output, labels.long())
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        

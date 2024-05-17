@@ -5,7 +5,7 @@ from nltk.stem.porter import PorterStemmer
 import numpy as np
 
 # pre-trained AI tokenizer
-nltk.download("punkt")
+# nltk.download("punkt")
 # define your stemmer
 stemmer = PorterStemmer()
 
