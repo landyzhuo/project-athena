@@ -8,6 +8,8 @@
 Athena is an AI-driven chatbot for studying abroad based on Python's NLTK (natural language toolkit) library. 
 
 ### Why Study Abroad?
+> "The number of international students studying at U.S. colleges and universities increased 12% in 2022-23"- Open Doors report by the IEE
+
 Due to the increasing amount of people wanting to seek an academic degree abroad, we decided to develop this tool to assist them in making the best decisions for their future. 
 
 ### About the Founders
