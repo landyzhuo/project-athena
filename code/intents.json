@@ -48,15 +48,21 @@
             ]
         },
         {
-            "tag": "vulgar-goodbye",
+            "tag": "vulgar",
             "patterns": [
                 "Fuck off!",
                 "Get lost!",
                 "Screw off!",
-                "Get the fuck away!"
+                "Get the fuck away!",
+                "Get out bitch",
+                "Bitch",
+                "Fuck",
+                "Suck my dick",
+                "Shit",
+                "Son of a bitch"
             ],
             "responses": [
-                "That's vulgar... Goodbye!"
+                "That's vulgar... Don't be like that!"
             ]
         }
     ]

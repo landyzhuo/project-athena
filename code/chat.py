@@ -28,6 +28,7 @@ print("PS: type 'quit' to exit the chat")
 while True:
     sentence = input("You: ")
     if sentence=="quit":
+        print("Bye XD")
         break
     sentence = tokenize(sentence)
     X = bagOfWords(sentence, words)
