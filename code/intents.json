@@ -29,7 +29,7 @@
                 "What's the purpose of Athena?"
             ],
             "responses": [
-                "Hi! I'm Athena- an AI-driven chatbot which assists people on the topic of studying abroad :-)",
+                "I'm Athena- an AI-driven chatbot which assists people on the topic of studying abroad :-)",
                 "I am an AI-driven chatbot which assists people on the topic of studying abroad :-)"
             ]
         },
@@ -45,24 +45,6 @@
             "responses": [
                 "Have a nice day :-)",
                 "Bye~"
-            ]
-        },
-        {
-            "tag": "vulgar",
-            "patterns": [
-                "Fuck off!",
-                "Get lost!",
-                "Screw off!",
-                "Get the fuck away!",
-                "Get out bitch",
-                "Bitch",
-                "Fuck",
-                "Suck my dick",
-                "Shit",
-                "Son of a bitch"
-            ],
-            "responses": [
-                "That's vulgar... Don't be like that!"
             ]
         }
     ]
