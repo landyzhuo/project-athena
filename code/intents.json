@@ -22,10 +22,15 @@
             "tag": "intro",
             "patterns": [
                 "Who are you?",
-                "What is Athena?"
+                "What is Athena?",
+                "What are you used for?",
+                "Why do you exist?",
+                "What do you do?",
+                "What's the purpose of Athena?"
             ],
             "responses": [
-                "Hi! I'm Athena- an AI-driven chatbot which assists people on the topic of studying abroad :-)"
+                "Hi! I'm Athena- an AI-driven chatbot which assists people on the topic of studying abroad :-)",
+                "I am an AI-driven chatbot which assists people on the topic of studying abroad :-)"
             ]
         },
         {
@@ -45,8 +50,10 @@
         {
             "tag": "vulgar-goodbye",
             "patterns": [
-                "Fuck off",
-                "Get lost"
+                "Fuck off!",
+                "Get lost!",
+                "Screw off!",
+                "Get the fuck away!"
             ],
             "responses": [
                 "That's vulgar... Goodbye!"

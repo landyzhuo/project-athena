@@ -34,7 +34,6 @@ for (sentence, tg) in xy:
     y_train.append(tags.index(tg))
 
 x_train = np.array(x_train)
-# x_train = x_train.type(torch.LongTensor)
 y_train = np.array(y_train)
 
 class AthenaDataset(Dataset):
@@ -75,4 +74,17 @@ for epoch in range(epochs):
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
-        
+    
+data = {
+    "model_state": model.state_dict(),
+    "input_size": input_size,
+    "output_size": output_size,
+    "hidden_size": hidden_size,
+    "all_words": words,
+    "tags": tags
+}
+
+file_name = "data.pth"
+torch.save(data, file_name)
+# verifies that model is saved to 'data.pt'
+print(f"File saved to {file_name}")
