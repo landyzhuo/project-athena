@@ -5,12 +5,13 @@
 </div>
 
 ### What is Project Athena?
-Athena is an AI-driven chatbot for studying abroad based on Python's NLTK (natural language toolkit) library. 
+Athena is an AI-driven swear-word detecting chatbot based on Python's NLTK (natural language toolkit) library. 
+The project will be presented in a form of a chatbot, but its model can be implemented into social media platforms, working platforms or anything that requires censoring. 
 
-### Why Study Abroad?
-> "The number of international students studying at U.S. colleges and universities increased 12% in 2022-23"- Open Doors report by the IEE
+### Why Swear-Word Detecting?
+> "The foolish and wicked practice of profane cursing and swearing is a vice so mean and low that every person of sense and character detests and despises it."- George Washington
 
-Due to the increasing amount of people wanting to seek an academic degree abroad, we decided to develop this tool to assist them in making the best decisions for their future. 
+To make social media and learning platforms beneficial to the grow of children, it is important to abandon swear words within these platforms so that they can live in a verbal-friendly, polite community. The connotation behind each words, offensive, yet also violent to everyone who senses it. Hence, for the sake of benefiting child development and improving censorship, we decided to make a swear-word detecting system. 
 
 ### About the Founders
 ##### Jianan (Landy) Zhuo
